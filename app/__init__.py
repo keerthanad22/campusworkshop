@@ -5,10 +5,10 @@ import psycopg2
 
 app = Flask(__name__)
 postgres = psycopg2.connect(
-        host="######################################",
-        database="######",
-        user="#######",
-        password="################")
+        host="dpg-ch138sj3cv203buj5db0-a.oregon-postgres.render.com",
+        database="todo_xodf",
+        user="root",
+        password="RafIJ8YwlO4gOVsu99vJfLKNDCMIlcdm")
 # To prevent from using a blueprint, we use a cyclic import
 # This also means that we need to place this import here
 # pylint: disable=cyclic-import, wrong-import-position
